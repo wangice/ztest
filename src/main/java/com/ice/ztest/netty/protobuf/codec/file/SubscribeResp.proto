@@ -1,0 +1,12 @@
+syntax = "proto3";  //指定版本，必须要写（proto3、proto2） 
+
+option java_package="com.ice.ztest.netty.protobuf.codec";
+option java_outer_classname = "SubscribeRespProto";
+
+message SubscribeResp{
+	int32 subReqID = 1;
+	string respCode = 2;
+	string desc = 3;
+}
+
+
